@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <a href="blog.html">Go to blog</a>
+        <hr>
+        <!--Headings-->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+        <!-- Paragraphs -->
+        <p>
+            <!-- Note: use "lorem<# ofwords>" to generate filler text -->
+            Lorem ipsum, dolor sit amet <strong>consectetur</strong> adipisicing <em>elit</em>. Esse, modi. <a href="http://google.com" target="_blank">Lorem</a> ipsum dolor sit amet consectetur, adipisicing elit. 
+            <!-- 
+            Inline Elements: do not start on a new line, take only the necessary width 
+                include <span>, <img>, <a>
+                Semantic Tags:
+                    - <strong> Text: bold by default, can be changed in CSS to whatever you want
+                    - <em> (Emphasized) Text: italic by default, can also be changed in CSS to whatever you want
+                A (link)
+                    - allows for a hyperlink
+                    - target attribute opens the site in another tab
+                        
+            Block Elements: start on a new line, take the full width available
+                include <div>, <h1>-<h6>, <p>, <form>
+            -->
+
+            <!--
+            Tag Attributes -> <tagname attributename="attributevalue">content</tagname>
+                - all tags can have attributes
+                - tags provide info about an element
+                - tags are placed within the start tag
+                - formatted as key/value pairs (id="someID")
+            -->
+        </p>
+
+        <!-- Lists -->
+        <ul> <!-- Unordered List, often used for nav bars etc -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+
+        <ol> <!-- Ordered List -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!-- Table: used for tabulated data (i.e. customer info), NOT websites bc its lame (instead use CSS flexbox stuffs) -->
+        <table>
+            <thead>
+                <tr> <!-- tr stands for table row -->
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ashley Thorlin</td>
+                    <td>ashleythorlin@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Thor Thorlin</td>
+                    <td>thorthor@email.com</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Luce Thorlin</td>
+                    <td>lucifer@email.com</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> <!-- break -->
+        <hr> <!-- Horizontal Line -->
+        <br> <!-- break -->
+
+        <!-- 
+        Forms: needs php/dynamic programming to save data 
+            - action: what page/website to submit the form
+            - method: usually POST (making a post request to a server, in order to add info to a db), 
+                GET: you will see the data filled in the URL, good for searching but it can be insecure
+
+            Input: name attribute links the form to the db in the php file
+        -->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter first name"> <!-- placeholder was introduced in HTML5, no longer a pita -->
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Nonbinary</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>   
+
+        <!-- Button -->
+        <button>Click Me</button> <!-- note: button won't really do anything without js -->
+
+        <!-- Image -->
+        <a href="sampleimg.jpg"> <!-- allows you to click on the image to open it in a new tab -->
+            <img src="sampleimg.jpg" alt="My Sample Image" width="200">
+        </a>
+
+        <!-- Quotations -->
+        <blockquote cite="http://google.com"> <!-- doesn't show google.com on the site itself, but will in the code in devtools -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque in non porro libero beatae vel unde magni quidem amet officiis, alias aliquid voluptatem deserunt, praesentium vero? Iusto tempore suscipit nulla.
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web">WWW</abbr> is swag</p>
+
+        <p><cite>HTML Crash Course</cite> by Brad Traversy</p> <!-- basically shows that it is something cited (italicized) -->
+
+        <!-- 
+        HTML5 Semantic Tags: clearly describes its meaning to both the browser and the developer (used to layout the website)
+            - header: usually has the logo, social media links, etc
+            - nav: nav bar
+            - section: copy text
+            - article: for each post on a blog
+            - footer: privacy policy stuff
+            - aside: side bar
+        -->
+
+        <div style="margin-top:500px"></div>
+    </body>
+</html>
