@@ -1,0 +1,22 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(17, 95, 17);
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+h1{
+    color: goldenrod;
+}
+
+#message-el{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+
+    
+}

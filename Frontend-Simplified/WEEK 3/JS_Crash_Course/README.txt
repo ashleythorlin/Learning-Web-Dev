@@ -1,0 +1,14 @@
+Project introduces:
+- file setup
+- variables
+- mathematical operations
+- reassignment/incrementing
+- button events (onclick)
+- writing and calling functions
+- console.log()
+- what is DOM
+- getElementById()
+- innerText vs textContent
+- variable types
+- string concatenation
+- +=

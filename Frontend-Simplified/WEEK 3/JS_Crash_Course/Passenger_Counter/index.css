@@ -1,0 +1,33 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+}
+
+.container{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#increment-btn{
+    background-color: #ccccee;
+}
+
+#save-btn{
+    background-color: #a1a1ca;
+}
