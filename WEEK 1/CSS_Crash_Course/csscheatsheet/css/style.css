@@ -1,0 +1,221 @@
+/* CSS Selectors: name of selector { property: value; } */
+/* *{  the asterisk means EVERY ELEMENT (these properties are "zeroing out the rest of the elements)
+    margin: 0;
+    padding:0;
+} */
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font: normal 16px Arial, Helvetica, sans-serif; /* Same as above */
+
+    line-height: 1.6em;
+    margin: 0; /* note: margin willbe 0 on the site everywhere except top of the header bc bheaders have a margin by default */
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* LINK STATES */
+a:hover{
+    color: red;
+}
+
+a:active{
+    color:green;
+}
+
+/* a:visited{
+    color: black;
+} */
+
+
+
+.container{
+    width: 80%; /* note: usually use percents bc the page will be responsive (width will be relative to the current size of the website */
+    margin: auto; /* puts an even margin on both sides */
+}
+
+.button { /* styling for the submit button */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both; /*gotta clear floats bc the next markups will get messed up */
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+
+    /* border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid; */
+
+    border: 5px red solid; /* same as above */
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted; /* can be solid, dotted, dashed, doubled, etc */
+
+    border: 5px red solid; /* note: this overwrites everything above */
+
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px; */
+
+    padding: 20px;  /* same as above */
+
+    margin-top: 20px;
+    margin: 20px 0; /* first value is for top/bottom, second is for right/left */
+
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; /* usually with the em measurement */
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+
+
+.categories{ /* note: this is the div surrounding our list, not the list elements themselves */
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;   /* note: cancels out perv list-style */
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom:dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block; /* this instead of a bunch of line breaks (<br> */
+}
+
+.my-form input[type="text"], .my-form textarea { /* add the types so the styling doesn't apply to the submit button */
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /* flexbox makes this way easier */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+.p-box{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative; /* ensures that the elements inside the p-box are positioned relative to the location of p-box */
+
+    background-image: url('../images/bgimg.jpg'); /* note: the ../ goes outside of the css file since this style.css file is in the css file */
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+/* PSEUDO CLASSES/ELEMENTS */
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: green;
+}

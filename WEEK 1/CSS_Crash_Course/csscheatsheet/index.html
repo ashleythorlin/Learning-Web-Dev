@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Cheat Sheet</title>
-        <link rel="stylesheet" href="text/css" href="css/style.css"> <!-- the "css/" specifies the destination folder bc style.css is in the css folder -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- the "css/" specifies the destination folder bc style.css is in the css folder -->
         <!-- 
         3 Methods for Adding CSS
             - inline CSS: css directly in the html elements (unorganized stupid not practical dont do it, better to keep elements and styling separate)
@@ -17,7 +17,100 @@
         -->     
     </head>
     <body>
-        <!--<h1 style="color:red">Hello World</h1> <---- inline css aka this is dumb -->
-        
-    </body>
+        <div class="container">
+            <div class="box-1">
+                <!--<h1 style="color:red">Hello World</h1> <---- inline css aka this is dumb -->
+                <h1>Hello World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque corporis. Iusto explicabo labore quibusdam? Aliquid qui commodi fuga magni iste cumque sed minima beatae accusamus consequuntur dignissimos tempore mollitia nesciunt amet voluptatum, distinctio totam repellat! Error doloribus doloremque molestias dignissimos quibusdam dolorem impedit sit consequuntur quam eveniet? Accusantium, deleniti.</p>
+            </div>
+
+            <div class="box-2">
+                <!--<h1 style="color:red">Hello World</h1> <---- inline css aka this is dumb -->
+                <h1>Goodbye World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque corporis. Iusto explicabo labore quibusdam? Aliquid qui commodi fuga magni iste cumque sed minima beatae accusamus consequuntur dignissimos tempore mollitia nesciunt amet voluptatum, distinctio totam repellat! Error doloribus doloremque molestias dignissimos quibusdam dolorem impedit sit consequuntur quam eveniet? Accusantium, deleniti.</p>
+                <a class="button" href="">Read More</a>
+            </div>
+
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="test.html">Category 5</a></li>
+                </ul>
+            </div>
+            <form class="my-form">
+                <div class="form-group">
+                    <label>Name: </label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Message: </label>
+                    <textarea name="message"></textarea>
+                </div>
+                <input class="button" type="submit" value="Submit" name="">
+            </form>
+
+            <div class="block">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae. Ullam reiciendis molestiae ea unde, rem doloremque quas, explicabo quidem exercitationem ipsam, illum dolorum temporibus voluptatum obcaecati recusandae nesciunt! Temporibus facilis eveniet nam, quam asperiores reprehenderit dicta veniam earum itaque fugit perspiciatis veritatis nesciunt incidunt consequatur eos excepturi. Quam, nisi.
+                </p>
+            </div>
+            <div class="block">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae. Ullam reiciendis molestiae ea unde, rem doloremque quas, explicabo quidem exercitationem ipsam, illum dolorum temporibus voluptatum obcaecati recusandae nesciunt! Temporibus facilis eveniet nam, quam asperiores reprehenderit dicta veniam earum itaque fugit perspiciatis veritatis nesciunt incidunt consequatur eos excepturi. Quam, nisi.
+                </p>
+            </div>
+            <div class="block">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae. Ullam reiciendis molestiae ea unde, rem doloremque quas, explicabo quidem exercitationem ipsam, illum dolorum temporibus voluptatum obcaecati recusandae nesciunt! Temporibus facilis eveniet nam, quam asperiores reprehenderit dicta veniam earum itaque fugit perspiciatis veritatis nesciunt incidunt consequatur eos excepturi. Quam, nisi.
+                </p>
+            </div>
+
+            <div class="clr"></div> <!--also referred to as clearfix--> 
+
+            <div id="main-block">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae. Ullam reiciendis molestiae ea unde, rem doloremque quas, explicabo quidem exercitationem ipsam, illum dolorum temporibus voluptatum obcaecati recusandae nesciunt! Temporibus facilis eveniet nam, quam asperiores reprehenderit dicta veniam earum itaque fugit perspiciatis veritatis nesciunt incidunt consequatur eos excepturi. Quam, nisi.
+                </p>
+            </div>
+
+            <div id="side-bar">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae. Ullam reiciendis molestiae ea unde, rem doloremque quas, explicabo quidem exercitationem ipsam, illum dolorum temporibus voluptatum obcaecati recusandae nesciunt! Temporibus facilis eveniet nam, quam asperiores reprehenderit dicta veniam earum itaque fugit perspiciatis veritatis nesciunt incidunt consequatur eos excepturi. Quam, nisi.
+                </p>
+            </div>
+
+            <div class="clr"></div>
+            <!-- POSITIONING -->
+            <div class="p-box">
+                <h1>Hello</h1>
+                <h2>Goodbye</h2>
+            </div>
+            
+            <ul class="my-list">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+        </div> <!-- container ends here -->
+
+        <a class="fix-me button" href="">Hello</a> <!-- has two classes: fix-me and button -->
+
+        <div style="margin-top:500px"></div>
+    </body>   
 </html>
