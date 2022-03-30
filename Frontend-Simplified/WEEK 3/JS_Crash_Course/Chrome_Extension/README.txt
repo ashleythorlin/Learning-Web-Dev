@@ -1,0 +1,11 @@
+Project introduced:
+- const
+- addEventListener()
+- innerHTML
+- input.value
+- function parameters
+- template strings
+- localStorage
+- JSON object
+- objects in arrays
+- Chrome extension deployment

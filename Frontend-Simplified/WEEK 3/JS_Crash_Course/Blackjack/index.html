@@ -2,13 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+        
         <title>Blackjack</title>
     </head>
     <body>
         <h1>Blackjack</h1>
         <p id="message-el">Want to play a round?</p>
-        <p>Cards:</p>
-        <p>Sum:</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <div class="container">
+            <button id="start-btn" onclick="startGame()">START GAME</button>
+            <button id="new-card-btn" onclick="newCard()">NEW CARD</button>
+        </div>
+        <p id="player-el">Player: Chips</p>
+        <script src="index.js"></script>
     </body>
 </html>
