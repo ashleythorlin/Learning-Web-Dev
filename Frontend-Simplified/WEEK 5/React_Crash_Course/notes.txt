@@ -1,0 +1,17 @@
+React is a library/framework for building UIs
+
+runs on the client as a Single Page App
+can be used to build full stack apps by communicating with a server/API
+    - MERN Stack:
+        mongoDB (document databse)
+        express.js (node.js web framework)
+        react.js (client side js framework)
+        node.js (premier js web server)
+
+React is used for:
+- structuring the "view" layer of your application
+- reusable components with their own state 
+- jsx - dynamic markup (allows us to combine html w/ javascript)
+- interactive UIs with virtual DOM 
+- performance and testing
+- popular ! :D
